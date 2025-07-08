@@ -9,7 +9,7 @@ source:
   sha256: 432c8adb3185f4f2f958328fda2a7551c7cdac6224024cbe2e9f1b9f63bf3aaa
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('libmetatomic-torch', max_pin='x.x') }}
 
