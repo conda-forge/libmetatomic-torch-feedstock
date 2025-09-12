@@ -21,8 +21,8 @@ requirements:
     - cmake
     - ninja
   host:
-    - libmetatensor >=0.1.14,<0.2
-    - libmetatensor-torch >=0.7.5,<0.8
+    - libmetatensor >=0.1.15,<0.2
+    - libmetatensor-torch >=0.8.0,<0.9
     # We build against the CPU version of torch to not have to deal with CUDA
     # compilers (torch's CMake targets tries to find CUDA compilers even when
     # there is no CUDA code to build). This does not impact the `run`
