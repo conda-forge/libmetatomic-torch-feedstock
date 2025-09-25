@@ -9,7 +9,7 @@ source:
   sha256: 385ec8b8515d674b6a9f093f724792b2469e7ea2365ca596f574b64e38494f94
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_subpackage('libmetatomic-torch', max_pin='x.x') }}
 
@@ -28,6 +28,9 @@ requirements:
     # there is no CUDA code to build). This does not impact the `run`
     # dependency, since libtorch `run_exports` are variant agnostic
     - libtorch * cpu*
+    # Also add a standard libtorch dependency to make sure it is taken into
+    # account by migrations
+    - libtorch
 
 test:
   requires:
