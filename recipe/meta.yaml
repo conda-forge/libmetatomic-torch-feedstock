@@ -1,4 +1,4 @@
-{% set version = "0.1.14" %}
+{% set version = "0.1.15" %}
 
 package:
   name: libmetatomic-torch
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/metatensor/metatomic/releases/download/metatomic-torch-v{{ version }}/metatomic-torch-cxx-{{ version }}.tar.gz
-  sha256: f2fcdb67b4d43482bfd45722496cf7babef0e6ccb6f71b436532e60e4882b7b5
+  sha256: 2fa4c94144164168834a90ff195ed7d788959c9d9ffd3ea4a85e2f470925c708
 
 build:
   number: 0
@@ -21,8 +21,8 @@ requirements:
     - cmake
     - ninja
   host:
-    - libmetatensor >=0.2.0,<0.3
-    - libmetatensor-torch >=0.9.0,<0.10
+    - libmetatensor >=0.2.2,<0.3
+    - libmetatensor-torch >=0.10.0,<0.11
     # We build against the CPU version of torch to not have to deal with CUDA
     # compilers (torch's CMake targets tries to find CUDA compilers even when
     # there is no CUDA code to build). This does not impact the `run`
