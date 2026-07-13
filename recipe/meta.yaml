@@ -1,4 +1,4 @@
-{% set version = "0.1.15" %}
+{% set version = "0.1.16" %}
 
 package:
   name: libmetatomic-torch
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/metatensor/metatomic/releases/download/metatomic-torch-v{{ version }}/metatomic-torch-cxx-{{ version }}.tar.gz
-  sha256: 2fa4c94144164168834a90ff195ed7d788959c9d9ffd3ea4a85e2f470925c708
+  sha256: 18c360e527499c36d13b17793e963bf932dbf1cb19a4bb207e04bde6be006153
 
 build:
   number: 0
